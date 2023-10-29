@@ -22,6 +22,8 @@ library(mapper)
 m <- map()
 
 m$set("key", "value")
+m$has("key")
+#> [1] TRUE
 m$get("key")
 #> [1] "value"
 ```

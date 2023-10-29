@@ -36,6 +36,7 @@ library(mapper)
 m <- map()
 
 m$set("key", "value")
+m$has("key")
 m$get("key")
 ```
 
