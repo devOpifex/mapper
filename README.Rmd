@@ -1,0 +1,41 @@
+---
+output: 
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+# mapper
+
+Simple map for R.
+
+
+``` r
+# install.packages("remotes")
+remotes::install_github("devOpifex/mapper")
+```
+
+## Example
+
+```{r example}
+library(mapper)
+
+m <- map()
+
+m$set("key", "value")
+m$get("key")
+```
+
