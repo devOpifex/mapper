@@ -38,5 +38,10 @@ m <- map()
 m$set("key", "value")
 m$has("key")
 m$get("key")
+
+m$set("key2", "value 2")
+m$ls()
+m$rm("key2")
+m$ls()
 ```
 

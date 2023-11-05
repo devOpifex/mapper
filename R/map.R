@@ -7,6 +7,8 @@
 #' m$set("a", 1)
 #' m$get("a")
 #' 
+#' m$set("b", 2)
+#' m$ls()
 #' @export
 map <- \(){
   env <- new.env()
@@ -20,6 +22,12 @@ map <- \(){
     },
     has = \(name) {
       exists(name, envir = env)
+    },
+    rm = \(name) {
+      remove(name, envir = env)
+    },
+    ls = \() {
+      ls(env)
     }
   ) |> 
     as_mapper()

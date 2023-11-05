@@ -14,4 +14,6 @@ m <- map()
 m$set("a", 1)
 m$get("a")
 
+m$set("b", 2)
+m$ls()
 }

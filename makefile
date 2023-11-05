@@ -1,7 +1,7 @@
 check: document
 	Rscript -e "devtools::check()"
 
-document:
+document: 
 	Rscript -e "devtools::document()"
 
 install: document
@@ -9,5 +9,4 @@ install: document
 
 readme:
 	Rscript -e "rmarkdown::render('README.Rmd')"
-
 
