@@ -14,17 +14,17 @@ map <- \(){
   env <- new.env()
 
   list(
-    set = \(name, x) {
-      env[[name]] <- x
+    set = \(key, value) {
+      env[[key]] <- value
     },
-    get = \(name) {
-      env[[name]]
+    get = \(key) {
+      env[[key]]
     },
-    has = \(name) {
-      exists(name, envir = env)
+    has = \(key) {
+      exists(key, envir = env)
     },
-    rm = \(name) {
-      remove(name, envir = env)
+    rm = \(key) {
+      remove(list = key, envir = env)
     },
     ls = \() {
       ls(env)

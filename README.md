@@ -31,7 +31,6 @@ m$set("key2", "value 2")
 m$ls()
 #> [1] "key"  "key2"
 m$rm("key2")
-#> Warning in remove(name, envir = env): object 'name' not found
 m$ls()
-#> [1] "key"  "key2"
+#> [1] "key"
 ```
