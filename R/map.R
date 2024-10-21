@@ -10,7 +10,7 @@
 #' m$set("b", 2)
 #' m$ls()
 #' @export
-map <- \(env = new.env()) {
+map <- \(env = new.env(parent = emptyenv())) {
   list(
     set = \(key, value) {
       env[[key]] <- value
